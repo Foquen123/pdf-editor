@@ -4,7 +4,6 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactCompiler: true,
   allowedDevOrigins: ['192.168.9.3', 'localhost', '192.168.0.47', '*.local'],
-  basePath: '/edit-pdf',
 };
 
 export default nextConfig;

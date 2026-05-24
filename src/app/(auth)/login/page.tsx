@@ -17,6 +17,7 @@ export default function LoginPage() {
       /**
        * disable the automatic redirect to the provider.
        * @default false
+       *
        */
       // disableRedirect: true,
     });
