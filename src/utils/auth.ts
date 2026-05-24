@@ -7,12 +7,14 @@ export const auth = betterAuth({
     provider: 'postgresql',
   }),
   baseURL: process.env.NEXT_PUBLIC_BETTER_AUTH_URL,
+  // baseURL: ,
 
   socialProviders: {
     google: {
       clientId: process.env.GOOGLE_CLIENT_ID as string,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
       prompt: 'select_account',
+      redirectURI: `${process.env.NEXT_PUBLIC_BETTER_AUTH_URL}/api/auth/callback/google`,
     },
   },
 });
